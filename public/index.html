@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<!--
+  Nathan Tran, Aryan Goel
+  October 25, 2025
+  Section AC: Rasmus, AB: Vainavi
+  index.html is the main page for Cartify, our online grocery store.
+  It allows users to browse, search, and purchase items, log in to accounts,
+  view detailed item information, and review past orders.
+-->
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Cartify - Fresh Groceries Online</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="index.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <header>
+      <h1>Cartify</h1>
+      <section>
+        <img src="images/logo.png" alt="Cartify logo">
+        <div>
+          <p>Fresh groceries purchased online, delivered to your door :)</p>
+          <p>cartifyhelp@gmail.com (not real)</p>
+        </div>
+      </section>
+    </header>
+
+    <main>
+      <!-- LOGIN + SIGNUP -->
+      <section id="login-section">
+        <h2>Login</h2>
+        <form id="login-form">
+          <label for="username">Username:</label>
+          <input id="username" name="username" type="text" required>
+
+          <label for="password">Password:</label>
+          <input id="password" name="password" type="password" required>
+
+          <button type="submit">Login</button>
+        </form>
+
+        <h3>Create Account</h3>
+        <form id="signup-form">
+          <label for="new-username">New Username:</label>
+          <input id="new-username" name="new-username" type="text" required>
+
+          <label for="new-password">New Password:</label>
+          <input id="new-password" name="new-password" type="password" required>
+
+          <label for="start-balance">Starting Balance (optional):</label>
+          <input id="start-balance" name="start-balance" type="number" min="0" step="0.01">
+
+          <button type="submit">Create Account</button>
+        </form>
+
+        <p id="auth-message"></p>
+      </section>
+
+      <!-- SEARCH + FILTER -->
+      <section id="search-bar">
+        <input id="search-input" type="text" placeholder="Search for fruits, veggies, snacks...">
+        <select id="filter-category">
+          <option value="all">All Categories</option>
+          <option value="fruits">Fruits</option>
+          <option value="vegetables">Vegetables</option>
+        </select>
+        <button id="search-btn">Search</button>
+      </section>
+
+      <!-- ITEMS (FILLED BY JS) -->
+      <section id="item-section">
+        <h2>Available Groceries</h2>
+        <div id="items">
+          <!-- Filled dynamically by index.js using /items or /search -->
+        </div>
+      </section>
+
+      <!-- ITEM DETAIL -->
+      <section id="item-detail" class="hidden"></section>
+
+      <!-- CART -->
+      <section id="cart-section">
+        <h2>Your Cart</h2>
+        <div id="cart-items"></div>
+        <button id="checkout-btn">Checkout</button>
+        <button id="empty-cart">Empty Cart</button>
+      </section>
+
+      <!-- PAST ORDERS -->
+      <section id="orders-section">
+        <h2>Past Orders</h2>
+        <div id="order-history"></div>
+      </section>
+
+      <!-- RETURNS HISTORY -->
+      <section id="returns-section">
+        <h2>Returns History</h2>
+        <div id="returns-history"></div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Cartify. All rights reserved.</p>
+      <h3>Sources</h3>
+      <p>Logo is AI generated from Open AI</p>
+      <p>Banana image: iStock</p>
+      <p>Apple image: Shutterstock</p>
+      <p>Carrot image: iStock</p>
+      <p>Lettuce image: Pngtree</p>
+    </footer>
+  </body>
+</html>
