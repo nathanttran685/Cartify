@@ -75,16 +75,15 @@ cartify.db
 
 ## ⚙️ Running the Project Locally
 
-1. Clone the repository
 ```bash
 git clone https://github.com/your-username/cartify.git
 cd cartify
-
-2. Install dependencies
 npm install
-
-3. Start the server
 node server.js
-
-4. Open in your browser
 http://localhost:8000
+```
+
+## Author
+Nathan Tran
+
+
