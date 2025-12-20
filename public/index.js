@@ -1,7 +1,5 @@
 /*
- * Nathan Tran, Aryan Goel
- * October 25, 2025
- * Section AC: Rasmus, AB: Vainavi
+ * Nathan Tran
  * index.js adds interactivity to the Cartify grocery page.
  * It allows users to log in, put items in cart and purchase them with returns.
  */

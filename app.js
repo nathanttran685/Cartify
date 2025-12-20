@@ -1,7 +1,5 @@
 /*
- * Nathan Tran, Aryan Goel
- * November 25, 2025
- * Section AC: Rasmus, AB: Vainavi
+ * Nathan Tran
  * This file implements the Node.js/Express backend for the Cartify application.
  * It helps manage data for the Cartify online store including items, transactions,
  * and also users logins
