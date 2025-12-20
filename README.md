@@ -79,9 +79,10 @@ cartify.db
 git clone https://github.com/your-username/cartify.git
 cd cartify
 npm install
-node server.js
-http://localhost:8000
+nodemon
 ```
+On browser open http://localhost:8000
+
 
 ## Author
 Nathan Tran
