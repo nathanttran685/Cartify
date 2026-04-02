@@ -76,7 +76,7 @@ cartify.db
 ## ⚙️ Running the Project Locally
 
 ```bash
-https://github.com/nathanttran685/Cartify.git
+git clone https://github.com/nathanttran685/Cartify.git
 cd Cartify
 npm install
 nodemon
